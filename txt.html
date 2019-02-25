@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {background-color: green;}
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: green;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+a:hover {
+  color:yellow;
+}
+ul li ul li { 
+  background: green; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background:green;}
+</style>
+</head>
+<body>
+
+
+<div>
+  <a target=_blank href="#">Home</a>
+  <a target=_blank href="#">About</a>
+ 
+  <ul>
+    <li>
+      <a class="active" target=_blank href="#">Products</a>
+      <ul>
+        <li><a target=_blank href="#">Engineering 1</a></li>
+        <li><a target=_blank href="#">Telecom 2</a></li>
+        <li><a target=_blank href="#">Energy</a></li>
+  <li><a target=_blank href="#">Finance</a></li>
+    <li><a target=_blank href="#">Consultancy</a></li>
+      </ul>
+  
+    <a target=_blank href="#">Services</a>
+<a target=_blank href="#">Contact</a>
+    </li>
+  </ul>
+</div>
+
+
+</body>
+</html>
+ 
